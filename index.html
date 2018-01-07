@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+    <center>
+    <div id="header"><h1>Motorcycle Trivia Game</h1></div>
+    <div> <button type="button" id="button">START</button></div>
+    <div id="timer"></div>
+    <div id="correctincorrect"></div>
+    <div id="container">
+        <form id="form">
+            <!-- b -->
+            <p class="question">1. How many wheels are on a motorcycle</p>
+            <ul class="answer">
+            <label for="q1a">4</label>
+            <input type="radio" name="question1" value="a" id="q1a"><br>
+            <label for="q1b">2</label>
+            <input type="radio" name="question1" value="b" id="q1b"><br>
+            <label for="q1c">5</label>
+            <input type="radio" name="question1" value="c" id="q1c"><br>
+            <label for="q1d">10</label>
+            <input type="radio" name="question1" value="d" id="q1d"><br>
+            </ul>
+
+            <!-- a -->
+            <p class="question">2. How often (minimum) should you check your hydraulic fluids and coolant levels?</p>
+            <ul class="answer">
+            <label for="q2a">Once a week</label>
+            <input type="radio" name="question2" value="a" id="q2a"><br>
+            <label for="q2b">Once a month</label>
+            <input type="radio" name="question2" value="b" id="q2b"><br>
+            <label for="q2c">4 times a year</label>
+            <input type="radio" name="question2" value="c" id="q2c"><br>
+            <label for="q2d">every 2 years</label>
+            <input type="radio" name="question2" value="d" id="q2d"><br>
+            </ul>
+
+            <!-- d -->
+            <p class="question">3. If you only hold a Californian M2 permit which of these can you NOT ride?</p>
+            <ul class="answers">
+            <label for="q3a">motorized scooter</label>
+            <input type="radio" name="question3" value="a" id="q3a"><br>
+            <label for="q3b">electric bicycle</label>
+            <input type="radio" name="question3" value="b" id="q3b"><br>
+            <label for="q3c">moped</label>
+            <input type="radio" name="question3" value="c" id="q3c"><br>
+            <label for="q3d">motorcycle</label>
+            <input type="radio" name="question3" value="d" id="q3d"><br>
+            </ul>
+
+            <!-- a -->
+            <p class="question">4. Approximately half of motorcycle crash fatalities are caused by</p>
+            <ul class="answers">
+            <label for="q4a">Alcohol impairment</label>
+            <input type="radio" name="question4" value="a" id="q4a"><br>
+            <label for="q4b">Mechanical failure</label>
+            <input type="radio" name="question4" value="b" id="q4b"><br>
+            <label for="q4c">Road conditions</label>
+            <input type="radio" name="question4" value="c" id="q4c"><br>
+            <label for="q4d">The rider's helmet</label>
+            <input type="radio" name="question4" value="d" id="q4d"><br>
+            </ul>
+
+            <!-- b -->
+            <p class="question">5. When slowing for a normal stop..</p>
+            <ul class="answers">
+            <label for="q5a">Pull in the clutch and coast</label>
+            <input type="radio" name="question5" value="a" id="q5a"><br>
+            <label for="q5b">Shift down through the rest of the gears as you slow</label>
+            <input type="radio" name="question5" value="b" id="q5b"><br>
+            <label for="q5c">Use less throttle and use the front brake</label>
+            <input type="radio" name="question5" value="c" id="q5c"><br>
+            <label for="q5d">Use only the rear brake</label>
+            <input type="radio" name="question5" value="d" id="q5d"><br>
+            </ul>
+            <!-- b -->
+            <p class="question">6. In slow, tight turns</p>
+            <ul class="answers">
+            <label for="q6a">Do not lean</label>
+            <input type="radio" name="question6" value="a" id="q6a"><br>
+            <label for="q6b">Lean the motorcycle only, and keep your body straight</label>
+            <input type="radio" name="question6" value="b" id="q6b"><br>
+            <label for="q6c">Lean with the motorcycle</label>
+            <input type="radio" name="question6" value="c" id="q6c"><br>
+            <label for="q6d">Lean your body more than the motorcycle</label>
+            <input type="radio" name="question6" value="d" id="q6d"><br>
+            </ul>
+
+            <!-- c -->
+            <p class="question">7. Use both brakes</p>
+            <ul class="answers">
+            <label for="q7a">While swerving</label>
+            <input type="radio" name="question7" value="a" id="q7a"><br>
+            <label for="q7b">Only for emergency stops</label>
+            <input type="radio" name="question7" value="b" id="q7b"><br>
+            <label for="q7c">Everytime you slow or stop</label>
+            <input type="radio" name="question7" value="c" id="q7c"><br>
+            <label for="q7d">Only for normal stops</label>
+            <input type="radio" name="question7" value="d" id="q7d"><br>
+            </ul>
+
+            <!-- d -->
+            <p class="question">8. A group of riders move from a staggered formation to a single file when</p>
+            <ul class="answers">
+            <label for="q8a">Riding at night</label>
+            <input type="radio" name="question8" value="a" id="q8a"><br>
+            <label for="q8b">Stopping at intersections</label>
+            <input type="radio" name="question8" value="b" id="q8b"><br>
+            <label for="q8c">Traffic is heavy</label>
+            <input type="radio" name="question8" value="c" id="q8c"><br>
+            <label for="q8d">Turning corners</label>
+            <input type="radio" name="question8" value="d" id="q8d"><br>
+            </ul>
+
+            <!-- a -->
+            <p class="question">9. If you are preparing to pass, it is usually better to..</p>
+            <ul class="answers">
+            <label for="q9a">Signal - check your left mirror - look left</label>
+            <input type="radio" name="question9" value="a" id="q9a"><br>
+            <label for="q9b">Signal - check your left mirror - speed up</label>
+            <input type="radio" name="question9" value="b" id="q9b"><br>
+            <label for="q9c">Signal - check your left mirror</label>
+            <input type="radio" name="question9" value="c" id="q9c"><br>
+            <label for="q9d">Signal - move into left lane - accelerate</label>
+            <input type="radio" name="question9" value="d" id="q9d"><br>
+            </ul>
+
+            <!-- b -->
+            <p class="question">10. Which is not a motorcycle brand?</p>
+            <ul class="answers">
+            <label for="q10a">Kawasaki</label>
+            <input type="radio" name="question10" value="a" id="q10a"><br>
+            <label for="q10b">Apple</label>
+            <input type="radio" name="question10" value="b" id="q10b"><br>
+            <label for="q10c">Yamaha</label>
+            <input type="radio" name="question10" value="c" id="q10c"><br>
+            <label for="q10d">Honda</label>
+            <input type="radio" name="question10" value="d" id="q10d"><br>
+            </ul>
+        </form>
+    </div>
+</div>
+    <!-- <div id="timer"></div>
+    <div id="questions"></div>
+    <div id="answers"></div> -->
+
+    </center>
+</body>
+</html>

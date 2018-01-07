@@ -1,0 +1,40 @@
+#questions {
+    font-size: 10px;
+}
+label {
+    color: white;
+}
+.question {
+    font-size: 22px;
+    padding-top: 2%;
+}
+body {
+    background-image: url("http://eskipaper.com/images/ktm-wallpaper-4.jpg");
+    background-size: 1600px 770px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.question {
+    color: white;
+}
+#correctincorrect{
+    color: white;
+}
+#timer {
+    position: fixed;
+    color: yellow;
+    padding-left: 10%;
+}
+#header {
+    color: white;
+    margin-top: 5%;
+}
+button {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+border-color: yellow;
+background-color: #FF1604;
+color: white;
+margin-top: 10%;
+}
