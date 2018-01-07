@@ -16,18 +16,24 @@ body {
 }
 .question {
     color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 #correctincorrect{
     color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 #timer {
     position: fixed;
     color: yellow;
     padding-left: 10%;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
 }
 #header {
     color: white;
     margin-top: 5%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 30px;
 }
 button {
 width: 200px;
@@ -37,4 +43,8 @@ border-color: yellow;
 background-color: #FF1604;
 color: white;
 margin-top: 10%;
+font-family: 'Luckiest Guy', cursive;
+}
+label {
+
 }

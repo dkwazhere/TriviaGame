@@ -9,6 +9,7 @@ $(document).ready(function(){
             hide();
             showStats();
             hideTimer();
+            checkScore();
         }
     }
 
@@ -40,21 +41,31 @@ $(document).ready(function(){
         $("#timer").hide();
     }
     function showStats(){
+        checkScore();
         $("#correctincorrect").append("<h1>Correct: " + correct + "</h1>");
         $("#correctincorrect").append("<h1>Incorrect: " + incorrect + "</h1>");
         $("#correctincorrect").show();
         hide();
     }
-    // function checkCorrect(){
-    //     if ($("#q1b").on("checked", true)) {
-    //     alert("good job");
-    //     }
-    // }
+    function checkScore(){
+        for (i=0; i<10;i++){
+            if ($('[class="correct"]').is(':checked')){
+                correct++;
+                console.log(correct);
+            }
+             else {
+                incorrect++;
+                console.log(incorrect);
+            }
+        }
+    }
+
 
 // running functions
     // checkCorrect();
     button();
     hide();
+    // checkCorrect();
 });
 
 // global variables.
