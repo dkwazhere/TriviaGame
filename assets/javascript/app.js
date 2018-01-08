@@ -12,7 +12,6 @@ $(document).ready(function(){
             checkScore();
         }
     }
-
     function stop(){
         clearInterval(timer);
     }
@@ -69,7 +68,7 @@ $(document).ready(function(){
 });
 
 // global variables.
-var time = 15;
+var time = 90;
 var correct = 0;
 var incorrect = 0;
 var timer;
